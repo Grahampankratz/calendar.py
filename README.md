@@ -2,16 +2,16 @@
 #Ryan Sattler, Graham Pankratz, Jacob Bussmann
 #10/11/18
 
-#User Input
+#User Input (Graham)
 month = int(input("What is the month? (M/YYYY)"))
 print('')
 year = int(input("What is the year? (M/YYYY)"))
 
-#Invalid input
+#Invalid input (Graham)
 if month >= 13:
     print("Error: month not given in correct format.")
 
-#Number of days in month
+#Number of days in month (Graham)
 elif month in (1,3,5,7,8,10,12):
     days = 31
 
@@ -24,7 +24,7 @@ elif month == 2:
     else:
         days = 28
 
-#Begginning day calculations
+#Beginning day calculations (Graham)
 century_digits = year//100
 year_digits = year%100
 value = year_digits + (year_digits//4)
@@ -72,7 +72,7 @@ else:
     day_of_the_week = value
 
 
-#Output
+#Output (Graham/Ryan)
 
 print("")
 print(month, "/", year)
